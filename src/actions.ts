@@ -106,8 +106,12 @@ export function GetActionsList(conn: SoundcraftUI): CompanionActionDefinitions {
 			description: 'Perform a timed fade transition on the master fader',
 			options: [...OPTION_SETS.fadeTransition],
 			callback: async (action) => {
+				let targetValue = Number(action.options.value)
+				if (targetValue > -15) {
+					targetValue = -15
+				}
 				return conn.master.fadeToDB(
-					Number(action.options.value),
+					targetValue,
 					Number(action.options.fadeTime),
 					Number(action.options.easing)
 				)
