@@ -1,9 +1,11 @@
 {
-	"name": "soundcraft-ui",
+	"name": "companion-module-soundcraft-ui-custom",
 	"version": "3.2.0",
-	"homepage": "https://github.com/bitfocus/companion-module-soundcraft-ui#readme",
+	"homepage": "https://github.com/scs-yasu/companion-module-soundcraft-ui-custom#readme",
 	"main": "dist/index.js",
 	"type": "module",
+	"author": "scs-yasu",
+	"description": "Soundcraft UI Companion Module Custom",
 	"scripts": {
 		"postinstall": "husky",
 		"dev": "run build:main --watch",
@@ -15,13 +17,12 @@
 		"eslint": "./node_modules/.bin/eslint",
 		"prettier": "./node_modules/.bin/prettier"
 	},
-	"author": "Ferdinand Malcher <ferdinand@malcher.media>",
 	"contributors": [
 		"Christian Himmler <christian@himmlers.de>"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-soundcraft-ui.git"
+		"url": "git+https://github.com/scs-yasu/companion-module-soundcraft-ui-custom.git"
 	},
 	"license": "MIT",
 	"prettier": "@companion-module/tools/.prettierrc.json",
